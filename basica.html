@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="pt-br" dir="ltr">
+
+<!-- Mirrored from www.calculadoraonline.com.br/basica by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 May 2021 19:25:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +12,17 @@
 	<meta name="description" content="Calculadora online completa com mais de 50 funções disponíveis. Realiza cálculos básicos e avançados de forma rápida, precisa e exata. Calculadora moderna e fácil de usar." />
 	<title>Calculadora Completa e Grátis - Calculadora Online</title>
 	<link href="templates/jp-hello/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-	<link href="gzipcf39.css?geral-ab10a391.css" rel="stylesheet" type="text/css" />
-	<script src="gzipdd81.js?jquery.min-8e44806d.js" type="text/javascript"></script>
-	<script src="gzip8252.js?jquery-noconflict-c7582c42.js" type="text/javascript"></script>
-	<script src="gzip8049.js?jquery-migrate.min-68e4b78f.js" type="text/javascript"></script>
-	<script src="gzipe0f1.js?jcookie-652f0218.js" defer="defer" type="text/javascript"></script>
-	<script src="gzip1041.js?basica-513a5be2.js" defer="defer" type="text/javascript"></script>
+	<link href="media/template/gzipcf39.css?geral-ab10a391.css" rel="stylesheet" type="text/css" />
+	<script src="media/template/gzipdd81.js?jquery.min-8e44806d.js" type="text/javascript"></script>
+	<script src="media/template/gzip8252.js?jquery-noconflict-c7582c42.js" type="text/javascript"></script>
+	<script src="media/template/gzip8049.js?jquery-migrate.min-68e4b78f.js" type="text/javascript"></script>
+	<script src="media/template/gzipe0f1.js?jcookie-652f0218.js" defer="defer" type="text/javascript"></script>
+	<script src="media/template/gzip1041.js?basica-513a5be2.js" defer="defer" type="text/javascript"></script>
 	<link href="basica.html" rel="canonical" />
 
 <link rel="apple-touch-icon-precomposed" href="templates/jp-hello/apple_touch_icon.png">
-<link rel="stylesheet" href="gzip16dd.css?theme-cbdd33fb.css">
-<script src="gzipea95.js?theme-615dccbd.js"></script>
+<link rel="stylesheet" href="media/template/gzip16dd.css?theme-cbdd33fb.css">
+<script src="media/template/gzipea95.js?theme-615dccbd.js"></script>
 
 </head>
 <body class="tm-isblog">
@@ -48,13 +51,9 @@
 
 
 
-
-
-
-
 <div id="offmenu" class="uk-offcanvas">
 	<div class="uk-offcanvas-bar spaco">		
-    	<ul class="uk-list branco ">
+    	<ul class="uk-list branco">
         	<li>
             	<a><i class="uk-icon-caret-down"></i> Modo</a>
     			<div>
@@ -62,6 +61,19 @@
                      	<li><a onclick="UIkit.offcanvas.hide();menuescolhido(1)">Assistido</a></li>
                         <li><a onclick="UIkit.offcanvas.hide();menuescolhido(2)">Convencional</a></li>
                         <li><a onclick="UIkit.offcanvas.hide();menuescolhido(3)">Expressão</a></li>                    
+    				</ul>
+    			</div>
+    		</li>
+    		<li>
+    			<a><i class="uk-icon-caret-down"></i> Arredondamento</a>
+    			<div>
+                	<ul>
+                     	<li><a onclick="UIkit.offcanvas.hide();menuescolhido(4)">Nenhum</a></li>
+                        <li><a onclick="UIkit.offcanvas.hide();menuescolhido(5)">1 casa decimal</a></li>
+                        <li><a onclick="UIkit.offcanvas.hide();menuescolhido(6)">2 casas decimais</a></li>
+                        <li><a onclick="UIkit.offcanvas.hide();menuescolhido(7)">3 casas decimais</a></li>
+                        <li><a onclick="UIkit.offcanvas.hide();menuescolhido(8)">4 casas decimais</a></li>
+                        <li><a onclick="UIkit.offcanvas.hide();menuescolhido(9)">5 casas decimais</a></li>                    
     				</ul>
     			</div>
     		</li>
@@ -108,6 +120,9 @@
     				</ul>
     			</div>
     		</li>
+    		<li>
+    			<a onclick="UIkit.offcanvas.hide();menuescolhido(26)" data-uk-modal="{target:'#alvocotacao'}">Cotação</a>
+    		</li>
     	</ul> 
 	</div>
 </div>
@@ -122,6 +137,19 @@
                      	<li><a onclick="menuescolhido(1)" class="uk-dropdown-close">Assistido</a></li>
                         <li><a onclick="menuescolhido(2)" class="uk-dropdown-close">Convencional</a></li>
                         <li><a onclick="menuescolhido(3)" class="uk-dropdown-close">Expressão</a></li>
+    				</ul>
+    			</div>
+    		</li>
+    		<li class="uk-parent" data-uk-dropdown="">
+    			<a>Arredondamento <i class="uk-icon-caret-down"></i></a>
+    			<div class="uk-dropdown uk-dropdown-navbar2 uk-dropdown-bottom">
+                	<ul class="uk-nav uk-nav-navbar2">
+                     	<li><a onclick="menuescolhido(4)" class="uk-dropdown-close">Sem arredondamento</a></li>
+                        <li><a onclick="menuescolhido(5)" class="uk-dropdown-close">1 casa decimal</a></li>
+                        <li><a onclick="menuescolhido(6)" class="uk-dropdown-close">2 casas decimais</a></li>
+                        <li><a onclick="menuescolhido(7)" class="uk-dropdown-close">3 casas decimais</a></li>
+                        <li><a onclick="menuescolhido(8)" class="uk-dropdown-close">4 casas decimais</a></li>
+                        <li><a onclick="menuescolhido(9)" class="uk-dropdown-close">5 casas decimais</a></li>
     				</ul>
     			</div>
     		</li>
@@ -168,16 +196,15 @@
     				</ul>
     			</div>
     		</li>
+    		<li>
+    			<a onclick="menuescolhido(26)" class="uk-dropdown-close" data-uk-modal="{target:'#alvocotacao'}">Cotação</a>
+    		</li>
     	</ul>
-		<div>
-	    	<a href="#offmenu"  class="btn-toggle" class="uk-margin-small-right uk-icon" class="uk-icon menu" data-uk-offcanvas="{mode:'slide'}"> 
-<svg width="20" height="20"       ><rect  x="2" y="4" width="16" height="2"> </rect><rect x="2" y="9" width="16" height="2"></rect><rect x="2" y="14" width="16" height="2"> </rect> </svg>      
-	  </a>
-	  </div>
+    	<a href="#offmenu" class="uk-navbar2-toggle uk-visible-small" data-uk-offcanvas="{mode:'slide'}"></a>
     </nav>
-    <table class="comandos">	
-		<tr>
-    		<td data-uk-tooltip="{pos:'bottom'}" title="Calcular" onclick="calcula()">=</td>
+    <table class="comandos">
+    	<tr>
+    		<td data-uk-tooltip="{pos:'bottom'}" title="Calcular" onclick="calcula()">∑</td>
     		<td data-uk-tooltip="{pos:'bottom'}" title="Limpar" onclick="limpa()">C</td>
     		<td data-uk-tooltip="{pos:'bottom'}" title="Limpar memória" onclick="limpamemoria()">MC</td>
     		<td data-uk-tooltip="{pos:'bottom'}" title="Guardar valor do visor na memória" onclick="guardarmemoria()">MS</td>
@@ -198,9 +225,9 @@
 	<div class="calc-hidden-small" id="painelcalcdesk">
 		<table class='calculadora calculadoradesk'>
 			<tr>
-				<td><div id="b1" class="bt bt10 cnum " data-uk-tooltip="{pos:'right'}" onclick="inserevalor('7')" title="7"><div class='rodar'>7</div></div></td>
-				<td><div id="b2" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('8')" title="8"><div class='rodar'>8</div></div></td>
-				<td><div id="b3" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('9')" title="9"><div class='rodar'>9</div></div></td>
+				<td><div id="b1" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('7')" title="7"><div class='rodar'>7</div></div></td>
+				<td><div id="b2" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('8')" title="8"><div class='rodar'>8</div></div></td>
+				<td><div id="b3" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('9')" title="9"><div class='rodar'>9</div></div></td>
 				<td><div id="b4" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('+')" title="Adição"><div class='rodar'>+</div></div></td>
 				<td><div id="b5" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('(')" title="Parêntese de abertura"><div class='rodar'>(</div></div></td>
 				<td><div id="b6" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('r3','b6','d')" title="Regra de três simples<br>Diretamente proporcional<br>r3(a;b;c)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>R3</div><div id='dpb6' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
@@ -208,9 +235,9 @@
 				<td><div id="b8" class="bt bt2 ccom" data-uk-tooltip="{pos:'left'}" onclick="precalcula('!','b8','d')" title="Fatorial<br>!(n)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>n!</div><div id='dpb8' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 			</tr>
 			<tr>
-				<td><div id="b9" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('4')" title="4"><div class='rodar'>4</div></div></td>
-				<td><div id="b10" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('5')" title="5"><div class='rodar'>5</div></div></td>
-				<td><div id="b11" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('6')" title="6"><div class='rodar'>6</div></div></td>
+				<td><div id="b9" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('4')" title="4"><div class='rodar'>4</div></div></td>
+				<td><div id="b10" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('5')" title="5"><div class='rodar'>5</div></div></td>
+				<td><div id="b11" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('6')" title="6"><div class='rodar'>6</div></div></td>
 				<td><div id="b12" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('-')" title="Subtração"><div class='rodar'>-</div></div></td>
 				<td><div id="b13" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor(')')" title="Parêntese de fechamento"><div class='rodar'>)</div></div></td>
 				<td><div id="b14" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('%','b14','d')" title="Porcentagem<br>%(x;y)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>%</div><div id='dpb14' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
@@ -218,9 +245,9 @@
 				<td><div id="b16" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left'}" onclick="precalcula('sen','b16','d')" title="Seno<br>sen(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>sen</div><div id='dpb16' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 			</tr>
 			<tr>
-				<td><div id="b17" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('1')" title="1"><div class='rodar'>1</div></div></td>
-				<td><div id="b18" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('2')" title="2"><div class='rodar'>2</div></div></td>
-				<td><div id="b19" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('3')" title="3"><div class='rodar'>3</div></div></td>
+				<td><div id="b17" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('1')" title="1"><div class='rodar'>1</div></div></td>
+				<td><div id="b18" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('2')" title="2"><div class='rodar'>2</div></div></td>
+				<td><div id="b19" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('3')" title="3"><div class='rodar'>3</div></div></td>
 				<td><div id="b20" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('×')" title="Multiplicação"><div class='rodar'>×</div></div></td>
 				<td><div id="b21" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('raiz','b21','d')" title="Raiz quadrada<br>raiz(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>√</div><div id='dpb21' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="b22" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('raiz3','b22','d')" title="Raiz cúbica<br>raiz3(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'><sup>3</sup>√</div><div id='dpb22' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
@@ -228,11 +255,11 @@
 				<td><div id="b24" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left'}" onclick="precalcula('cos','b24','d')" title="Cosseno<br>cos(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>cos</div><div id='dpb24' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 			</tr>
 			<tr>
-				<td><div id="b25" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('0')" title="0"><div class='rodar'>0</div></div></td>
-				<td><div id="b26" class="bt bt2 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor(',')" title=","><div class='rodar'>,</div></div></td>
+				<td><div id="b25" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('0')" title="0"><div class='rodar'>0</div></div></td>
+				<td><div id="b26" class="bt bt1 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor(',')" title=","><div class='rodar'>,</div></div></td>
 				<td><div id="b27" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="calcula()" title="Calcular"><div class='rodar'>=</div></div></td>
-				<td><div id="b28" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('/')" title="Divisão"><div class='rodar'>÷</div></div></td>
-				<td><div id="b29" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula ('x2','b29','d')" title="Ao quadrado<br>x2(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>x<sup>2</sup></div><div id='dpb29'   class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b28" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('index.html')" title="Divisão"><div class='rodar'>/</div></div></td>
+				<td><div id="b29" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('x2','b29','d')" title="Ao quadrado<br>x2(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>x<sup>2</sup></div><div id='dpb29' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="b30" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('x3','b30','d')" title="Ao cubo<br>x3(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>x<sup>3</sup></div><div id='dpb30' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="b31" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('exp','b31','d')" title="Exponencial<br>exp(x;y)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>x<sup>y</sup></div><div id='dpb31' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="b32" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left'}" onclick="precalcula('tg','b32','d')" title="Tangente<br>tg(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>tg</div><div id='dpb32' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
@@ -313,7 +340,7 @@
 				<td><div id="mb25" class="bt bt1 cnum" onclick="inserevalor('0')"><div class='rodar'>0</div></div></td>
 				<td><div id="mb26" class="bt bt1 cnum" onclick="inserevalor(',')"><div class='rodar'>,</div></div></td>
 				<td><div id="mb27" class="bt bt2 ccom" onclick="calcula()"><div class='rodar'>=</div></div></td>
-				<td><div id="mb28" class="bt bt2 ccom" onclick="inserevalor('/')"><div class='rodar'>÷</div></div></td>
+				<td><div id="mb28" class="bt bt2 ccom" onclick="inserevalor('index.html')"><div class='rodar'>/</div></div></td>
 			</tr>
 			<tr>
 				<td><div id="mb5" class="bt bt2 ccom" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="inserevalor('(')" title="Parêntese de abertura"><div class='rodar'>(</div></div></td>
@@ -334,7 +361,7 @@
 				<td><div id="mb24" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('cos','b24','m')" title="Cosseno<br>cos(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>cos</div><div id='mdpb24' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 			</tr>			
 			<tr>
-				<td><div id="mb29" class="bt bt2 ccom" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="precalcula('x2','b29','m')" title="Ao quadrado<br>x2(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>x<sup>2</sup></div><div id='mdpb29'  class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb29" class="bt bt2 ccom" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="precalcula('x2','b29','m')" title="Ao quadrado<br>x2(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>x<sup>2</sup></div><div id='mdpb29' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="mb30" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('x3','b30','m')" title="Ao cubo<br>x3(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>x<sup>3</sup></div><div id='mdpb30' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="mb31" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('exp','b31','m')" title="Exponencial<br>exp(x;y)<br/><br/>Entradas:<br/>Base<br/>Expoente<br/>" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>x<sup>y</sup></div><div id='mdpb31' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="mb32" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('tg','b32','m')" title="Tangente<br>tg(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>tg</div><div id='mdpb32' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
@@ -399,10 +426,9 @@
 				<td><div id="mb71" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('mmc','b71','m')" title="Mínimo Múltiplo Comum<br>mmc(x<sub>1</sub>;x<sub>2</sub>;...;x<sub>n</sub>)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>MMC</div><div id='mdpb71' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="mb72" class="bt bt2 ccom" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('mdc','b72','m')" title="Máximo Divisor Comum<br>mdc(x<sub>1</sub>;x<sub>2</sub>;...;x<sub>n</sub>)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>MDC</div><div id='mdpb72' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 			</tr>
-			
 		</table>	
 	</div>
-		<div class="direit">
+	<div class="direit">
 		<div class="quadf bt3"></div> Financeira 
 		<div class="quade bt4"></div> Estatística
 		<div class="quadt bt5"></div> Trigonometria  
@@ -433,17 +459,16 @@
 <div id="alvocotacao" class="uk-modal">
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close" id="btnfechacot"></a>
-        <div id="alvocotacaoc"></div>
+        <div id="alvocotacaoc"></div>            	
     </div>
 </div>
 
 
 
-
-
-
-
-
+    <li id="hlp_f"></li>
+    <li id="hlp_t"></li>
+    <li id="hlp_e"></li>
+    <li id="hlp_o"></li>
 
 <div id="funcoesdin"></div>
 	
@@ -452,11 +477,15 @@
 	
 	
 	
+	
+</article>
+			</main>
+			
+					</div>
+		
+								</div>
+	
+	
+		
+		
 
-
-
-
-</body>
-
-<!-- Mirrored from www.calculadoraonline.com.br/basica by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 May 2021 19:25:14 GMT -->
-</html>
