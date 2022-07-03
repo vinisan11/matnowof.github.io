@@ -171,7 +171,7 @@ solid #ddd;padding:25px
 0px 20px 0px;width:98%}.cxvmd{margin-top:5px;color:#47677}.pdbtn{margin:10px
 0px 15px 5px}.cem{margin-top:5px}.blocodf{margin:10px
 0px;padding:20px
-10px;background-color:#fafafa;border-radius:8px;width:33%;}.blocodfi{margin:10px
+10px;background-color:#fafafa;border-radius:8px;width:20%;}.blocodfi{margin:10px
 0px 0px 0px;padding:20px
 10px;background-color:#fafafa;border-radius:8px;text-align:center}.txtcentro{text-align:center!important}.chartdivgraf{width:100%;height:500px}.inputsconvtdv{width:100%;text-align:center;margin-bottom:30px}.blocoibc{display:inline-block;text-align:center}.flotlftblue{background-color:#2794BD21}.flotlftgreen{background-color:#51935821}.flotlftdgreen{background-color:#3bd3612e}.flotlftclear{background-color:#C8858521}.flotlftdclear{background-color:#B9AC8321}.flotlft{font-size:10px;line-height:45px;cursor:pointer;border:1px
 0.5px;display:inline-block;text-align:center;width:43px}.flotlft:hover{background:#009dd8;color:#fff;box-shadow:inset 0 2px 4px rgba(0,0,0,0.2);border-radius:4px}#previewasc{width:100%;text-align:center;margin-top:30px;height:80px;font-size:18px}.quad{display:inline-block;width:20px;height:14px;border-radius:4px;border:1px
@@ -501,6 +501,18 @@ a{color:#fff}*+p,*+hr,*+ul,*+ol,*+dl,*+blockquote,*+pre,*+address,*+fieldset,*+f
 25px 0 0;float:left}.tm-toolbar .uk-float-right .uk-panel{margin:0
 0 0 25px;float:right}.tm-headerbar .tm-logo{float:left}.tm-headerbar .uk-panel{max-width:100%;margin-right:0;float:right}.tm-main>:nth-child(n+2){margin-top:25px}.tm-content>:last-child{margin-bottom:0}.tm-footer{position:relative;text-align:center}.tm-footer .uk-panel+.uk-panel{margin-top:25px}.tm-totop-scroller{display:block;position:absolute;top:0;right:0;z-index:1000;width:20px;height:20px;line-height:20px;font-size:14px;color:#555;text-align:center;-webkit-transition:all linear 0.05s;transition:all linear 0.05s}.tm-totop-scroller:after{content:"\f077";font-family:"FontAwesome"}.tm-totop-scroller:hover,.tm-totop-scroller:focus{color:#888;font-size:16px;outline:none;text-decoration:none}.tm-totop-scroller:active{color:#222;font-size:11px}.tm-leading-article .uk-article:last-child{padding-bottom:25px;border-bottom:1px solid #ddd}.tm-error-icon{font-size:250px}.tm-error-headline{font-size:100px}.tm-offline{width:300px}.tm-socialbuttons>div{margin-right:10px;float:left}.tm-totop-scroller{color:#444;display:block;font-size:14px;height:20px;line-height:20px;position:fixed;right:20px;text-align:center;bottom:20px;transition:all 0.05s linear 0s;width:20px;z-index:1000;top:inherit}.alignleft{display:block;margin-right:15px;float:left}.alignright{display:block;margin-left:15px;float:right}.aligncenter{display:block;margin-left:auto;margin-right:auto}
 
+.equabtn{
+line-height: 35px;
+cursor: pointer;
+border: 1px solid #aaa;
+border-radius: 4px;
+color: #444;
+position: relative;
+margin: 0.5px;
+width: 50px;
+font-size: 10px;
+}
+
 .ocultar{
 cursor:pointer;
 position:relative;
@@ -680,9 +692,17 @@ function Mudarestado(el) {
 </div>
 
 
+	
+
+<nav class="uk-navbar2">
+<!-- Muda Entre Cal e Express -->
+<input  onclick="Mudarestado('equahd')"  type="button" class="equabtn" title="Mudar para modo Projetor de Equação" value="Equação" data-uk-tooltip="{pos:'left'}"> </input>
+<!-- Muda Entre Cal e Express -->
+</nav>
+<br>
+   <div id="equahd" >
 	<nav class="uk-navbar2">
-			<div class="ocultar" id="olho" data-uk-tooltip="{pos:'left'}" onclick="event.stopPropagation(), Mudarestado('TUDO')"  title="Ocultar Vídeos e Explicações" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjdJREFUSEu11UnIjlEUwPHfZ4iMC9OGEjKulFCIsiFDKaWkUJIURUSGSCyQMpQiU1lYifRlIVGGHSIbO0ohsTClLNDRvbpdj7dXfc7mfZ97z7n/e8bb4T9LR3H+FDzoal4GbMYRbMOhroRkwGqcQbcK0h9zMBujMQzf8R5PcQ+38O1vlypD1AQZmg6Y1MKrt+lyB/Gx1isBsReQc0kph6uEfEHY9GkAvsF6XCn3SkBPnMaqQiFDhmAQnqW9UViDTehd6P/APuzNaxkQv5ewrOFmrRI/HTcQuSplN/bHQgbswIEWcc6QCM0FvMQufMXKtFabL0JnAMbhCXpVGq+wB6eq6uqH6ylca9PeC4yo7F9jQgDOV3HPehGy5diCw1XiA3INC5IXF7GiIQI7A/AcIxs2T2AjZuJuQ+ID0h0fcBwbGs64F4Ctf+neq1iCgYgSLKulTnxn8qZmLA9AXzzGmGo3mmY4PqXbHSuKIlRLyE3MrezvxBTIVTQDtxG9UErMp8hBSOgsxoDUkFEUGZITPyvpvsPUCH/ZaJHQSFbMoyzRONtTkuN/lkju5VR5NWQy5qc59bsPsuHSVFVxo1Ie4mwacD0wDTGBY4yU4Qq7sXiUjetZFOsTcTJN0Dpprb4bO74JUIZhHeYhbt0kMabDu/CoHvW/9FsB8oExZ2LmjMfg9B5E2Ub33sfnlPSm96QtQLthKt+TmLJH2/WgXUDoBST6ZSGiD7rUg3yReDfiSW07B//iwR+6PwG9TnG/ZJXO9AAAAABJRU5ErkJggg=="> </div>
-			
+		<div class="ocultar" id="olho" data-uk-tooltip="{pos:'left'}" onclick="event.stopPropagation(), Mudarestado('TUDO')"  title="Ocultar Vídeos e Explicações" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjdJREFUSEu11UnIjlEUwPHfZ4iMC9OGEjKulFCIsiFDKaWkUJIURUSGSCyQMpQiU1lYifRlIVGGHSIbO0ohsTClLNDRvbpdj7dXfc7mfZ97z7n/e8bb4T9LR3H+FDzoal4GbMYRbMOhroRkwGqcQbcK0h9zMBujMQzf8R5PcQ+38O1vlypD1AQZmg6Y1MKrt+lyB/Gx1isBsReQc0kph6uEfEHY9GkAvsF6XCn3SkBPnMaqQiFDhmAQnqW9UViDTehd6P/APuzNaxkQv5ewrOFmrRI/HTcQuSplN/bHQgbswIEWcc6QCM0FvMQufMXKtFabL0JnAMbhCXpVGq+wB6eq6uqH6ylca9PeC4yo7F9jQgDOV3HPehGy5diCw1XiA3INC5IXF7GiIQI7A/AcIxs2T2AjZuJuQ+ID0h0fcBwbGs64F4Ctf+neq1iCgYgSLKulTnxn8qZmLA9AXzzGmGo3mmY4PqXbHSuKIlRLyE3MrezvxBTIVTQDtxG9UErMp8hBSOgsxoDUkFEUGZITPyvpvsPUCH/ZaJHQSFbMoyzRONtTkuN/lkju5VR5NWQy5qc59bsPsuHSVFVxo1Ie4mwacD0wDTGBY4yU4Qq7sXiUjetZFOsTcTJN0Dpprb4bO74JUIZhHeYhbt0kMabDu/CoHvW/9FsB8oExZ2LmjMfg9B5E2Ub33sfnlPSm96QtQLthKt+TmLJH2/WgXUDoBST6ZSGiD7rUg3yReDfiSW07B//iwR+6PwG9TnG/ZJXO9AAAAABJRU5ErkJggg=="> </div>
     	<ul class="uk-navbar2-nav uk-hidden-small">
         	<li class="uk-parent" data-uk-dropdown="">
             	<a>Modo <i class="uk-icon-caret-down"></i></a>
@@ -695,6 +715,19 @@ function Mudarestado(el) {
     			</div>
     		</li>
     		<li class="uk-parent" data-uk-dropdown="">
+    			<a>Arredondamento <i class="uk-icon-caret-down"></i></a>
+    			<div class="uk-dropdown uk-dropdown-navbar2 uk-dropdown-bottom">
+                	<ul class="uk-nav uk-nav-navbar2">
+                     	<li><a onclick="menuescolhido(4)" class="uk-dropdown-close">Sem arredondamento</a></li>
+                        <li><a onclick="menuescolhido(5)" class="uk-dropdown-close">1 casa decimal</a></li>
+                        <li><a onclick="menuescolhido(6)" class="uk-dropdown-close">2 casas decimais</a></li>
+                        <li><a onclick="menuescolhido(7)" class="uk-dropdown-close">3 casas decimais</a></li>
+                        <li><a onclick="menuescolhido(8)" class="uk-dropdown-close">4 casas decimais</a></li>
+                        <li><a onclick="menuescolhido(9)" class="uk-dropdown-close">5 casas decimais</a></li>
+    				</ul>
+    			</div>
+    		</li>
+			<li class="uk-parent" data-uk-dropdown="">
     			<a>Constantes <i class="uk-icon-caret-down"></i></a>
     			<div class="uk-dropdown uk-dropdown-navbar2 uk-dropdown-bottom">
                 	<ul class="uk-nav uk-nav-navbar2">
@@ -734,12 +767,12 @@ function Mudarestado(el) {
                         <li><a onclick="menuescolhido(23)" class="uk-dropdown-close">Padrão</a></li>
                         <li><a onclick="menuescolhido(24)" class="uk-dropdown-close">Azul</a></li>
                         <li><a onclick="menuescolhido(25)" class="uk-dropdown-close">Lilás</a></li>
-    			</ul>
-				</div>
-			</li>	
-		</ul>
+    				</ul>
+    			</div>
+    		</li>
+    	</ul>
 		<div>
-	    	<a href="#offmenu"  class="btn-toggle" class="uk-margin-small-right uk-icon" class="uk-icon menu" data-uk-offcanvas="{mode:'slide'}"> 
+	    	<a href="#offmenu" class="btn-toggle" class="uk-margin-small-right uk-icon" class="uk-icon menu" data-uk-offcanvas="{mode:'slide'}"> 
 <svg width="20" height="20"       ><rect  x="2" y="4" width="16" height="2"> </rect><rect x="2" y="9" width="16" height="2"></rect><rect x="2" y="14" width="16" height="2"> </rect> </svg>      
 	  </a>
 	  </div>
@@ -772,10 +805,11 @@ function Mudarestado(el) {
 				<td><div id="b3" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('9')" title="9"><div class='rodar'>9</div></div></td>
 				<td><div id="b4" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('+')" title="Adição"><div class='rodar'>+</div></div></td>
 				<td><div id="b5" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('(')" title="Parêntese de abertura"><div class='rodar'>(</div></div></td>
-				<td><div id="b6" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('r3','b6','d')" title="Regra de três simples<br>Diretamente proporcional<br>r3(a;b;c)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>R3</div><div id='dpb6' class='uk-dropdown uk-dropdown_'  onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b6" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('r3','b6','d')" title="Regra de três simples<br>Diretamente proporcional<br>r3(a;b;c)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>R3</div><div id='dpb6' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="b7" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('mod')" title="Módulo<br>Resto de uma divisão"><div class='rodar'>mod</div></div></td>
 				<td><div id="b8" class="bt bt2 ccom" data-uk-tooltip="{pos:'left'}" onclick="precalcula('!','b8','d')" title="Fatorial<br>!(n)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>n!</div><div id='dpb8' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 			</tr>
+			
 			<tr>
 				<td><div id="b9" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('4')" title="4"><div class='rodar'>4</div></div></td>
 				<td><div id="b10" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('5')" title="5"><div class='rodar'>5</div></div></td>
@@ -838,7 +872,7 @@ function Mudarestado(el) {
 			</tr>
 			<tr>
 				<td><div id="b57" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('montante','b57','d')" title="Valor Futuro Composto<br>com aportes<br>montante(VP;R;i;n)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>S 1</div><div id='dpb57' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-				<td><div id="b58" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('montante2','b58','d')" title="Valor Futuro Composto<br>com aportes e saque<br>montante2(VP;R;i;n;s)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>S 2</div><div id='dpb58' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'> </div></div></td>
+				<td><div id="b58" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('montante2','b58','d')" title="Valor Futuro Composto<br>com aportes e saque<br>montante2(VP;R;i;n;s)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>S 2</div><div id='dpb58' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="b59" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('montante3','b59','d')" title="Valor Futuro Composto<br>com Aporte, Saque e Inflação<br>montante3(VP;R;i;n;s;f)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>S 3</div><div id='dpb59' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="b60" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('objt','b60','d')" title="Tempo até objetivo<br>objt(o;ai;p;i)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>t (obj)</div><div id='dpb60' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 				<td><div id="b61" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('objp','b61','d')" title="Aportes periódicos para objetivo<br>objp(o;ai;t;i)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>p (obj)</div><div id='dpb61' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
@@ -971,15 +1005,26 @@ function Mudarestado(el) {
 			
 		</table>	
 	</div>
+		
+		<script>
+        function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+      
+	  
+	  </script>
+		
 		<div class="direit">
 		<div class="quadf bt3"></div> Financeira 
 		<div class="quade bt4"></div> Estatística
 		<div class="quadt bt5"></div> Trigonometria  
 	</div>
 	<div id="result" class="boxresult"></div>
-	
 
-</div>
 
 <div id="alvofuncoes" class="uk-modal">
     <div class="uk-modal-dialog">
@@ -1006,9 +1051,18 @@ function Mudarestado(el) {
         <a class="uk-modal-close uk-close" id="btnfechacot"></a>
         <div id="alvocotacaoc"></div>
     
-	<div id="funcoesdin"></div>
+
 	
 	</div>
+</div>
+
+
+
+	
+<div id="funcoesdin"></div>		
+
+
+
 </div>
 
 	<!--                                                                                                                   Equacoes                                                                                                                                        !-->
@@ -1167,6 +1221,9 @@ function Mudarestado(el) {
 
 
 <div id="prop_dentro">
+
+
+<input type="text">  </input>
 	
 </article>
 			</main>
