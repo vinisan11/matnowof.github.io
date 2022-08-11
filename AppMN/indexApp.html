@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
-<title>Matemática NOW</title>
+<title>Matemática NOW APP Version</title>
 
 <link href="Imagens/icon.png" rel="shortcut icon" />
 	<script src="gzipdd81.js?jquery.min-8e44806d.js" type="text/javascript"></script>
@@ -498,6 +498,80 @@ a{color:#fff}*+p,*+hr,*+ul,*+ol,*+dl,*+blockquote,*+pre,*+address,*+fieldset,*+f
 -25px 25px -25px;border-width:0 0 1px 0}.tm-logo-small:hover{text-decoration:none}.tm-navbar:not(.uk-navbar-attached){border-radius:0}}.tm-logo-small{letter-spacing:-0.31em}.tm-toolbar .uk-float-left .uk-panel{margin:0
 25px 0 0;float:left}.tm-toolbar .uk-float-right .uk-panel{margin:0
 0 0 25px;float:right}.tm-headerbar .tm-logo{float:left}.tm-headerbar .uk-panel{max-width:100%;margin-right:0;float:right}.tm-main>:nth-child(n+2){margin-top:25px}.tm-content>:last-child{margin-bottom:0}.tm-footer{position:relative;text-align:center}.tm-footer .uk-panel+.uk-panel{margin-top:25px}.tm-totop-scroller{display:block;position:absolute;top:0;right:0;z-index:1000;width:20px;height:20px;line-height:20px;font-size:14px;color:#555;text-align:center;-webkit-transition:all linear 0.05s;transition:all linear 0.05s}.tm-totop-scroller:after{content:"\f077";font-family:"FontAwesome"}.tm-totop-scroller:hover,.tm-totop-scroller:focus{color:#888;font-size:16px;outline:none;text-decoration:none}.tm-totop-scroller:active{color:#222;font-size:11px}.tm-leading-article .uk-article:last-child{padding-bottom:25px;border-bottom:1px solid #ddd}.tm-error-icon{font-size:250px}.tm-error-headline{font-size:100px}.tm-offline{width:300px}.tm-socialbuttons>div{margin-right:10px;float:left}.tm-totop-scroller{color:#444;display:block;font-size:14px;height:20px;line-height:20px;position:fixed;right:20px;text-align:center;bottom:20px;transition:all 0.05s linear 0s;width:20px;z-index:1000;top:inherit}.alignleft{display:block;margin-right:15px;float:left}.alignright{display:block;margin-left:15px;float:right}.aligncenter{display:block;margin-left:auto;margin-right:auto}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon-top-menu {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active1 {
+  background-color: #000;
+  color: white;
+}
+</style>
+
+<style>
+.topnavdw {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnavdw #myLinks {
+  display: none;
+}
+
+.topnavdw a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnavdw a.icon-top-menu {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 1000;
+}
+
+.topnavdw a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.imgmenudw {
+ padding:20px;
+ width:100px;
+}
 </style>
 
 <style>
@@ -591,12 +665,25 @@ img.hover-shadow {
 	box-shadow: 0px 0px 5px 0px rgba(204,204,204,0.6);
 }
 </style>
-
+<!-- Left 50% -->
 <div style="padding:0 !important" class="uk-container ">
 <!-- Left 50% -->
 </div>
 
+<!-- Menu da Calcu !-->
 
+<div class="topnav">
+  <a href="#home" class="active1"><img src="imagens/logo.png" width="80px"> </a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon-top-menu" onclick="myFunction()" >
+    <i class="fa fa-bars" > <img src="imagens/preto/menu-button-of-three-horizontal-lines.png"></i> 
+  </a>
+</div>
+<!-- Menu da Calcu !-->
 
 <div id="offmenu" class="uk-offcanvas">
 	<div class="uk-offcanvas-bar spaco">		
@@ -683,8 +770,10 @@ img.hover-shadow {
 <br>
    <div id="equahd" >
 	<nav class="uk-navbar2">
+    <!-- Olho !-->
 	 <div class="ocultar" id="olho" data-uk-tooltip="{pos:'left'}" onclick="event.stopPropagation()"   title="Ocultar Vídeos e Explicações" > <div onclick="Mudarestado('TUDO6')"> <div onclick="Mudarestado('TUDO8')"> <div onclick="Mudarestado('TUDO14')"> <div onclick="Mudarestado('TUDO15')"> <div onclick="Mudarestado('TUDO16')"> <div onclick="Mudarestado('TUDO29')"> <div onclick="Mudarestado('TUDO30')"> <div onclick="Mudarestado('TUDO31')"> <div onclick="Mudarestado('TUDO32')"> <div onclick="Mudarestado('TUDO34')"> <div onclick="Mudarestado('TUDO35')"> <div onclick="Mudarestado('TUDO36')"> <div onclick="Mudarestado('TUDO37')"> <div onclick="Mudarestado('TUDO38')"> <div onclick="Mudarestado('TUDO39')"> <div onclick="Mudarestado('TUDO40')"> <div onclick="Mudarestado('TUDO41')"> <div onclick="Mudarestado('TUDO42')"> <div onclick="Mudarestado('TUDO43')"> <div onclick="Mudarestado('TUDO44')"> <div onclick="Mudarestado('TUDO45')"> <div onclick="Mudarestado('TUDO46')"> <div onclick="Mudarestado('TUDO47')"> <div onclick="Mudarestado('TUDO48')"> <div onclick="Mudarestado('TUDO49')"> <div onclick="Mudarestado('TUDO50')"> <div onclick="Mudarestado('TUDO51')"> <div onclick="Mudarestado('TUDO56')"> <div onclick="Mudarestado('TUDO60')"> <div onclick="Mudarestado('TUDO61')"> <div onclick="Mudarestado('TUDO62')"> <div onclick="Mudarestado('TUDO63')"> <div onclick="Mudarestado('TUDO64')"> <div onclick="Mudarestado('TUDO65')"> <div onclick="Mudarestado('TUDO66')"> <div onclick="Mudarestado('TUDO67')"> <div onclick="Mudarestado('TUDO68')"> <div onclick="Mudarestado('TUDO69')"> <div onclick="Mudarestado('TUDO71')"> <div onclick="Mudarestado('TUDO72')"> <div onclick="Mudarestado('TUDO21')"> <div onclick="Mudarestado('TUDO22')"><div onclick="Mudarestado('TUDO23')"> <div onclick="Mudarestado('TUDO24')"> <img src="https://img.icons8.com/ios-filled/16/000000/hide.png"> </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
-    	<ul class="uk-navbar2-nav uk-hidden-small">
+    <!-- Olho !-->	
+		<ul class="uk-navbar2-nav uk-hidden-small">
         	<li class="uk-parent" data-uk-dropdown="">
             	<a>Modo <i class="uk-icon-caret-down"></i></a>
     			<div class="uk-dropdown uk-dropdown-navbar2 uk-dropdown-bottom">
@@ -901,13 +990,6 @@ img.hover-shadow {
 	  
 	  </script>
 		
-		<div class="direit">
-		<div class="quadf bt3"></div> Financeira 
-		<div class="quade bt4"></div> Estatística
-		<div class="quadt bt5"></div> Trigonometria  
-	</div>
-	<div id="result" class="boxresult"></div>
-
 
 <div id="alvofuncoes" class="uk-modal">
     <div class="uk-modal-dialog">
@@ -951,10 +1033,22 @@ img.hover-shadow {
 </article>
 			</main>
 		
-					</div>	
-	
-	
-	
+					</div>		
+	<!-- Icons !-->	
+<div class="topnavdw">
+<a href="#home" class="active1"> 
+<img class="imgmenudw" src="imagens/branco/Prancheta1copia.png">
+<img class="imgmenudw" src="imagens/branco/Prancheta1copia3.png">
+<img class="imgmenudw" src="imagens/branco/Prancheta1copia2.png" >
+<img class="imgmenudw" src="imagens/branco/Prancheta1copia7.png" > 
+<img class="imgmenudw" src="imagens/branco/Prancheta1copia4.png">
+</a>
+ 
+  <a href="javascript:void(0);" class="icon-top-menu" onclick="myFunction()" >
+    <i class="fa fa-bars" >  </i> 
+  </a>
+</div>	
+<!-- Icons !-->		
 	
 <script>	
 	document.getElementById('formula').onkeypress=function(e){
