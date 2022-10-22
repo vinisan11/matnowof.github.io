@@ -22,11 +22,15 @@
     "imagens/screanshots/06.jpg"
   ],
   "icons": [
-     {
+    {
       "src": "imagens/logoapp.png",
       "sizes": "512x512",
       "type": "image/png"
-     },
+    }
+  ],
+  "shortcuts": [],
+  "display_override": [
+    "fullscreen"
   ],
   "prefer_related_applications": true
 }
