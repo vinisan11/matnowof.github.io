@@ -34,7 +34,7 @@
       "sizes": "1024x1024"
    },
    {
-      "src": "../imagens/logoapp.png",
+      "src": "../imagens/logoappmask.png",
       "type": "image/png",
       "sizes": "196x196",
       "purpose": "maskable"
