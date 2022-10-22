@@ -9,7 +9,7 @@
 
 <title>Matemática NOW APP Version</title>
 
-<link href="Imagens/icon.png" rel="shortcut icon" />
+<link href="imagens/logoapp.png" rel="shortcut icon" />
 	<script src="gzipdd81.js?jquery.min-8e44806d.js" type="text/javascript"></script>
 	<script src="gzip8252.js?jquery-noconflict-c7582c42.js" type="text/javascript"></script>
 	<script src="gzip8049.js?jquery-migrate.min-68e4b78f.js" type="text/javascript"></script>
@@ -30,7 +30,18 @@
 		<script src= "js/uikit-icons.js" ></script>
         <script src="js/uikit-icons.min.js"></script>
 
-	
+
+<!-- PWA !-->	
+<script src="PWA/pwabuilder-sw.js" ></script>
+<script src="PWA/manifest.json" ></script>
+
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('./sw.js');
+		}
+	</script>
+<!-- PWA !-->
 
 
 <style type="text/css">
@@ -877,50 +888,7 @@ img.hover-shadow {
     </div>
 	<div class="calc-hidden-small" id="painelcalcdesk">
 		<table class='calculadora calculadoradesk'>
-			<tr>
-				<td><div id="b1" class="bt bt1 cnum" onclick="ivlr('7')" >7</div></td>
-    			<td><div id="b2" class="bt bt1 cnum" onclick="ivlr('8')" >8</div></td>
-    			<td><div id="b3" class="bt bt1 cnum" onclick="ivlr('9')" >9</div></td>
-    			<td><div id="b4" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="ivlr('+')" title="Adição">+</div></td>
-    			<td><div id="b5" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="ivlr('(')" title="Parêntese de abertura">(</div></td>
-			</tr>
-			
-			<tr>
-				<td><div id="b9" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('4')" title="4"><div class='rodar'>4</div></div></td>
-				<td><div id="b10" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('5')" title="5"><div class='rodar'>5</div></div></td>
-				<td><div id="b11" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('6')" title="6"><div class='rodar'>6</div></div></td>
-				<td><div id="b12" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('-')" title="Subtração"><div class='rodar'>-</div></div></td>
-				<td><div id="b13" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor(')')" title="Parêntese de fechamento"><div class='rodar'>)</div></div></td>
-			</tr>
-			<tr>
-				<td><div id="b17" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('1')" title="1"><div class='rodar'>1</div></div></td>
-				<td><div id="b18" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('2')" title="2"><div class='rodar'>2</div></div></td>
-				<td><div id="b19" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('3')" title="3"><div class='rodar'>3</div></div></td>
-				<td><div id="b20" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('×')" title="Multiplicação"><div class='rodar'>×</div></div></td>
-				<td><div id="b21" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('raiz','b21','d')" title="Raiz quadrada<br>raiz(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>√</div><div id='dpb21' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-			</tr>
-			<tr>
-				<td><div id="b25" class="bt bt10 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('0')" title="0"><div class='rodar'>0</div></div></td>
-				<td><div id="b26" class="bt bt2 cnum" data-uk-tooltip="{pos:'right'}" onclick="inserevalor(',')" title=","><div class='rodar'>,</div></div></td>
-				<td><div id="b27" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="calcula()" title="Calcular"><div class='rodar'>=</div></div></td>
-				<td><div id="b28" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('/')" title="Divisão"><div class='rodar'>÷</div></div></td>
-				<td><div id="b29" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula ('x2','b29','d')" title="Ao quadrado<br>x2(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>x<sup>2</sup></div><div id='dpb29'   class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-			</tr>
-			<tr>
-				<td><div id="b33" class="bt bt5 ctrig" data-uk-tooltip="{pos:'right'}" onclick="inserevalor('π')" title="π"><div class='rodar'>π</div></div></td>
-				<td><div id="b34" class="bt bt5 ctrig" data-uk-tooltip="{pos:'right'}" onclick="precalcula('hip','b34','d')" title="Hipotenusa<br>hip(c1;c2)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>hip</div><div id='dpb34' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-				<td><div id="b35" class="bt bt5 ctrig" data-uk-tooltip="{pos:'right'}" onclick="precalcula('cotg','b35','d')" title="Cotangente<br>cotg(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>cotg</div><div id='dpb35' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-				<td><div id="b36" class="bt bt5 ctrig" data-uk-tooltip="{pos:'right'}" onclick="precalcula('sec','b36','d')" title="Secante<br>sec(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>sec</div><div id='dpb36' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-				<td><div id="b37" class="bt bt5 ctrig" data-uk-tooltip="{pos:'right'}" onclick="precalcula('cosec','b37','d')" title="Cossecante<br>cosec(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>cosec</div><div id='dpb37' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-			</tr>
-			<tr>
-				<td><div id="b41" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('fatorar','b41','d')" title="Fatoração<br>fatorar(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>a*b</div><div id='dpb41' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-				<td><div id="b42" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('frac','b42','d')" title="Transformar Decimal em Fração<br>frac(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>a/b</div><div id='dpb42' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-				<td><div id="b43" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="precalcula('ale','b43','d')" title="Número Aleatório<br>ale(min;max)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>ale</div><div id='dpb43' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-				<td><div id="b44" class="bt bt5 ctrig" data-uk-tooltip="{pos:'right'}" onclick="precalcula('apr','b44','d')" title="Ângulo para Radiano<br>apr(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>a/r</div><div id='dpb44' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-				<td><div id="b45" class="bt bt5 ctrig" data-uk-tooltip="{pos:'right'}" onclick="precalcula('rpa','b45','d')" title="Radiano para Ângulo<br>rpa(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>r/a</div><div id='dpb45' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
-			</tr>
-		
+	
 		</table>
 	</div>
 	<div class="calc-visible-small" id="painelcalcmobi">
@@ -1093,7 +1061,7 @@ img.hover-shadow {
 <a href="" > 
 <img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Vídeos" src="imagens/branco/Prancheta1copia3.png">
 </a>
-<a href="https://matnowof.github.io/AppMN/APPequa/equaAPP.html">  
+<a href="C:\Users\vini_\OneDrive\Área de Trabalho\IndexApp\equa\equaAPP.html">  
 <img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Mudar de Calculadora" src="imagens/branco/Prancheta1copia2.png">
 </a>
 <a href="javascript:void(0);" onclick="share()" > 
