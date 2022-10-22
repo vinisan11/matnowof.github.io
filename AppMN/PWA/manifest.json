@@ -10,7 +10,7 @@
   "start_url": "https://matnowof.github.io/AppMN/indexApp.html",
   "theme_color": "#ffffff",
   "categories": ["education","finance"],
-  "screenshots": ["imagens/screanshots/01","imagens/screanshots/02","imagens/screanshots/03","imagens/screanshots/04","imagens/screanshots/05","imagens/screanshots/06",],
+  "screenshots": ["imagens/screanshots/01.jpg","imagens/screanshots/02.jpg","imagens/screanshots/03.jpg","imagens/screanshots/04.jpg","imagens/screanshots/05.jpg","imagens/screanshots/06.jpg",],
   "icons": [
     {
       "src": "imagens/logoapp.png",
