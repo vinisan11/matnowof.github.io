@@ -36,10 +36,11 @@
 <script src="PWA/pwabuilder-sw.js" ></script>
 
 	<script>
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('./pwabuilder-sw.js');
-		}
-	</script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
+
 <!-- PWA !-->
 
 
