@@ -21,7 +21,6 @@
     "../magens/screanshots/05.jpg",
     "../imagens/screanshots/06.jpg"
   ],
-  "icons": [
    "icons": [
    {
       "src": "../imagens/logoapp.png",
@@ -39,7 +38,7 @@
       "sizes": "196x196",
       "purpose": "maskable"
    },
-]
+
   ],
   "shortcuts": [],
   "display_override": [
