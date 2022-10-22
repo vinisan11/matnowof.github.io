@@ -2,7 +2,7 @@
   "background_color": "#ffffff",
   "description": "Calculadora Online",
   "dir": "ltr",
-  "display": "standalone",
+  "display": "override",
   "name": "Matemática NOW",
   "orientation": "any",
   "scope": "/",
