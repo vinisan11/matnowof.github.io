@@ -3,6 +3,7 @@
   "description": "Calculadora Online",
   "dir": "ltr",
   "display_override": ["fullscreen", "minimal-ui"],
+  "display": "standalone",
   "name": "Matemática NOW",
   "orientation": "any",
   "scope": "/",
