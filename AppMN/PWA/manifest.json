@@ -16,7 +16,7 @@
       "src": "imagens/logoapp.png",
 	  "sizes": "512x512",
 	  "type": "image/png",
-    }
+    },
     {
     "src": "imagens/logoapp.png",
     "sizes": "48x48",
@@ -33,6 +33,7 @@
     {
     "src": "imagens/logoapp-svg.svg",
     "sizes": "any"
+    }    
   ],
   "shortcuts": []
 }
