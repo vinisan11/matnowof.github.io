@@ -38,6 +38,12 @@
       "sizes": "196x196",
       "purpose": "maskable"
    },
+   {
+      "src": "../imagens/logoappmask.png",
+      "type": "image/png",
+      "sizes": "196x196",
+      "purpose": "any"
+   },
 
   ],
   "shortcuts": [],
