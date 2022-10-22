@@ -2,7 +2,7 @@
   "background_color": "#ffffff",
   "description": "Calculadora Online",
   "dir": "ltr",
-  "display": "standalone",
+  "display_override": ["fullscreen", "minimal-ui"],
   "name": "Matemática NOW",
   "orientation": "any",
   "scope": "/",
@@ -22,23 +22,17 @@
     "imagens/screanshots/06.jpg"
   ],
   "icons": [
-    {
+     {
       "src": "imagens/logoapp.png",
       "sizes": "512x512",
       "type": "image/png"
-    },
-    ],
-     "icons":[
-    {
+     },
+	 {
       "src": "imagens/logoapp.png",
       "sizes": "196x196",
       "type": "image/png",
       "purpose": "any maskable"
      },
-  ],
-  "shortcuts": [],
-  "display_override": [
-    "fullscreen"
   ],
   "prefer_related_applications": true
 }
