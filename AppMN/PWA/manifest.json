@@ -1,0 +1,22 @@
+{
+  "background_color": "#ffffff",
+  "description": "Calculadora Online",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Matemática NOW",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "MNOW",
+  "start_url": "https://matnowof.github.io/AppMN/indexApp.html",
+  "theme_color": "#ffffff",
+  "categories": ["education","finance"],
+  "screenshots": ["imagens/screanshots/01","imagens/screanshots/02","imagens/screanshots/03","imagens/screanshots/04","imagens/screanshots/05","imagens/screanshots/06",],
+  "icons": [
+    {
+      "src": "imagens/logoapp.png",
+	  "sizes": "512x512",
+	  "type": "image/png",
+    }
+  ],
+  "shortcuts": []
+}
