@@ -15,12 +15,24 @@
     "finance"
   ],
   "screenshots": [
-    "../imagens/screanshots/01.jpg",
-    "../imagens/screanshots/02.jpg",
-    "../imagens/screanshots/03.jpg",
-    "../imagens/screanshots/04.jpg",
-    "../magens/screanshots/05.jpg",
-    "../imagens/screanshots/06.jpg"
+     {
+      "src": "../imagens/screanshots/01.jpg"
+    },
+    {
+      "src": "../imagens/screanshots/02.jpg"
+    },
+    {
+      "src": "../imagens/screanshots/03.jpg"
+    },
+	  {
+      "src": "../imagens/screanshots/04.jpg"
+    },
+    {
+      "src": "../imagens/screanshots/05.jpg"
+    },
+    {
+      "src": "../imagens/screanshots/06.jpg"
+    }
   ],
    "icons": [
    {
