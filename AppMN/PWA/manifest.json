@@ -27,12 +27,6 @@
       "sizes": "512x512",
       "type": "image/png"
      },
-	 {
-      "src": "imagens/logoapp.png",
-      "sizes": "196x196",
-      "type": "image/png",
-      "purpose": "any maskable"
-     },
   ],
   "prefer_related_applications": true
 }
