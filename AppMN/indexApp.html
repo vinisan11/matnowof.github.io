@@ -33,12 +33,12 @@
 
 <!-- PWA !-->	
 <link rel="manifest" href="PWA/manifest.json">
-<script src="PWA/manifest.json" ></script>
+<script src="PWA/pwabuilder-sw.js" ></script>
 
 
 	<script>
 		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('./sw.js');
+			navigator.serviceWorker.register('sw.js');
 		}
 	</script>
 <!-- PWA !-->
