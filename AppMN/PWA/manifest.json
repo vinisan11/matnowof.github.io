@@ -17,6 +17,22 @@
 	  "sizes": "512x512",
 	  "type": "image/png",
     }
+    {
+    "src": "imagens/logoapp.png",
+    "sizes": "48x48",
+    "type": "image/png"
+    },
+    {
+    "src": "imagens/logoapp.png",
+    "sizes": "48x48"
+    },
+    {
+    "src": "imagens/logoapp.png",
+    "sizes": "72x72 96x96 128x128 256x256"
+    },
+    {
+    "src": "imagens/logoapp-svg.svg",
+    "sizes": "any"
   ],
   "shortcuts": []
 }
