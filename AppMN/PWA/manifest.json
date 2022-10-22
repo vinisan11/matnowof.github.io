@@ -2,38 +2,35 @@
   "background_color": "#ffffff",
   "description": "Calculadora Online",
   "dir": "ltr",
-  "display": "override",
+  "display": "standalone",
   "name": "Matemática NOW",
   "orientation": "any",
   "scope": "/",
   "short_name": "MNOW",
   "start_url": "https://matnowof.github.io/AppMN/indexApp.html",
   "theme_color": "#ffffff",
-  "categories": ["education","finance"],
-  "screenshots": ["imagens/screanshots/01.jpg","imagens/screanshots/02.jpg","imagens/screanshots/03.jpg","imagens/screanshots/04.jpg","imagens/screanshots/05.jpg","imagens/screanshots/06.jpg"],
+  "categories": [
+    "education",
+    "finance"
+  ],
+  "screenshots": [
+    "imagens/screanshots/01.jpg",
+    "imagens/screanshots/02.jpg",
+    "imagens/screanshots/03.jpg",
+    "imagens/screanshots/04.jpg",
+    "imagens/screanshots/05.jpg",
+    "imagens/screanshots/06.jpg"
+  ],
   "icons": [
     {
       "src": "imagens/logoapp.png",
-	  "sizes": "512x512",
-	  "type": "image/png",
-    },
-    {
-    "src": "imagens/logoapp.png",
-    "sizes": "48x48",
-    "type": "image/png"
-    },
-    {
-    "src": "imagens/logoapp.png",
-    "sizes": "48x48"
-    },
-    {
-    "src": "imagens/logoapp.png",
-    "sizes": "72x72 96x96 128x128 256x256"
-    },
-    {
-    "src": "imagens/logoapp-svg.svg",
-    "sizes": "any"
-    }    
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ],
-  "shortcuts": []
+  "shortcuts": [],
+  "display_override": [
+    "fullscreen"
+  ],
+  "prefer_related_applications": true
 }
