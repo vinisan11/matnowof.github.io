@@ -22,12 +22,24 @@
     "../imagens/screanshots/06.jpg"
   ],
   "icons": [
-    {
+   "icons": [
+   {
       "src": "../imagens/logoapp.png",
-      "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
-    }
+      "sizes": "512x512"
+   },
+   {
+      "src": "../imagens/logoapp.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+   },
+   {
+      "src": "../imagens/logoapp.png",
+      "type": "image/png",
+      "sizes": "196x196",
+      "purpose": "maskable"
+   },
+]
   ],
   "shortcuts": [],
   "display_override": [
