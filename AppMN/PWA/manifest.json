@@ -38,14 +38,14 @@
    {
       "src": "../imagens/logoapp.png",
       "type": "image/png",
-      "sizes": "512x512"
-      "purpose": "any"
+      "sizes": "512x512",
+      "purpose": "any",
    },
    {
       "src": "../imagens/logoapp.png",
       "type": "image/png",
-      "sizes": "1024x1024"
-      "purpose": "maskable"
+      "sizes": "1024x1024",
+      "purpose": "maskable",
    },
   ],
   "shortcuts": [],
