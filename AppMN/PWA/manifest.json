@@ -39,25 +39,14 @@
       "src": "../imagens/logoapp.png",
       "type": "image/png",
       "sizes": "512x512"
+      "purpose": "any"
    },
    {
       "src": "../imagens/logoapp.png",
       "type": "image/png",
       "sizes": "1024x1024"
-   },
-   {
-      "src": "../imagens/logoappmask.png",
-      "type": "image/png",
-      "sizes": "196x196",
       "purpose": "maskable"
    },
-   {
-      "src": "../imagens/logoappmask.png",
-      "type": "image/png",
-      "sizes": "196x196",
-      "purpose": "any"
-   },
-
   ],
   "shortcuts": [],
   "display_override": [
