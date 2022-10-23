@@ -6,11 +6,14 @@
       "src": "/img/icons-192-192.png",
       "type": "image/png",
       "sizes": "192x192"
+      "purpose": "maskable"   
     },
     {
       "src": "/img/icons-512-512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
+
     }
   ],
   "start_url": "/",
