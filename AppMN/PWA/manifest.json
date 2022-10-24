@@ -52,5 +52,5 @@
   "display_override": [
     "fullscreen"
   ],
-  "prefer_related_applications": "true"
+  "prefer_related_applications": true
 }
