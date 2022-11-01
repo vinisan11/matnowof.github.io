@@ -2,7 +2,7 @@
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/ 5.1 . 2 /workbox-sw.js');
 
-const CACHE = "pwabuilder-page" ;
+const CACHE = "sw-page" ;
 
 // TODO: substitui o seguinte pela página de fallback offline correto, ou seja: const offlineFallbackPage = "offline.html" ;
 const offlineFallbackPage = "ToDo-replace-this-name.html" ;
