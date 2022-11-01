@@ -36,12 +36,6 @@ const resourcesToPrecache = [
 '/imagens/branco/Prancheta1copia3.png',					
 ];
 
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
-    self.skipWaiting();
-  }
-});
-
 self.addEventListener('install', async (event) => {
   event.waitUntil(
     caches.open(CACHE)
