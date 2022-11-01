@@ -5,7 +5,7 @@
   "display_override": [
     "fullscreen"
   ],
-  "display": "fullscreen",
+  "display": "standalone",
   "name": "Matemática NOW",
   "orientation": "portrait",
   "scope": "/",
