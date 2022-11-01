@@ -7,7 +7,7 @@ const CACHE = "sw-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
 
-const resourcesTo Precache = [
+const resourcesToPrecache = [
 '/',
 'indexApp.html',
 '/javascript_nova/gzip1041-2.js',
@@ -37,7 +37,6 @@ const resourcesTo Precache = [
 '/imagens/branco/Prancheta1copia7.png',	
 '/imagens/branco/Prancheta1copia3.png',					
 ];
-const offlineFallbackPage = "offline.html";
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
@@ -48,7 +47,7 @@ self.addEventListener("message", (event) => {
 self.addEventListener('install', async (event) => {
   event.waitUntil(
     caches.open(CACHE)
-      .then((cache) => cache.add(offlineFallbackPage))
+      .then(cache => (cache.addAll(resourcesToPrecache)))
   );
 });
 
