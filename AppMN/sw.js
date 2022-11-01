@@ -7,19 +7,19 @@ const CACHE = "sw-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
 
-const resourcesTo Precache = {
+const resourcesTo Precache = [
 '/',
-'./indexApp.html',
+'indexApp.html',
 '/javascript_nova/gzip1041-2.js',
-'./gzipea95.js',
-'./gzip1041.js',
-'./gzipe0f1.js',
-'./gzip8049.js',
-'./gzip8252.js',
-'./gzipdd81.js',
-'./basica-a.min.js',
-'./basica-c.min.js',
-'./basica-e.min.js',
+'gzipea95.js',
+'gzip1041.js',
+'gzipe0f1.js',
+'gzip8049.js',
+'gzip8252.js',
+'gzipdd81.js',
+'basica-a.min.js',
+'basica-c.min.js',
+'basica-e.min.js',
 '/javascript_nova/bsc-a.min2.js',
 '/css/uikit.min.css',
 '/imagens/logo2',
@@ -36,7 +36,7 @@ const resourcesTo Precache = {
 '/imagens/branco/Prancheta1copia9.png',
 '/imagens/branco/Prancheta1copia7.png',	
 '/imagens/branco/Prancheta1copia3.png',					
-};
+];
 const offlineFallbackPage = "offline.html";
 
 self.addEventListener("message", (event) => {
