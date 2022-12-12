@@ -1,3 +1,8 @@
+self.addEventListener('fetch', () => {
+  // literally does nothing
+});
+
+//console.info('SW for test running');
 
 // This is the "Offline page" service worker
 
