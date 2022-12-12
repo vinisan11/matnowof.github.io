@@ -3,9 +3,10 @@
   "description": "Calculadora Online",
   "dir": "ltr",
   "display_override": [
-    "fullscreen"
+    "fullscreen",
+    "standalone"
   ],
-  "display": "standalone",
+  "display": "fullscreen",
   "name": "Matemática NOW",
   "orientation": "portrait",
   "scope": "/",
