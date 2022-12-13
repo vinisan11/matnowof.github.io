@@ -1,19 +1,13 @@
-self.addEventListener('fetch', () => {
-  // literally does nothing
-});
-
-//console.info('SW for test running');
 
 // This is the "Offline page" service worker
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
-const CACHE = "sw-page";
+const cacheName = 'sw-page';
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
 
-const resourcesToPrecache = [
-'/',
+const cacheAssets = [
 'indexApp.html',
 '/javascript_nova/gzip1041-2.js',
 'gzipea95.js',
@@ -42,6 +36,25 @@ const resourcesToPrecache = [
 '/imagens/branco/Prancheta1copia7.png',	
 '/imagens/branco/Prancheta1copia3.png',					
 ];
+
+self.addEventListener('isntall' , e => {
+console.log('Service Worker: Installed');
+
+e.waitUntil(
+  caches
+   .open(cacheName)
+   .then(cache => {
+	  console.log('Service Worker: Cacging Files');
+      cache.addAll(cacheAssets);
+      });
+      .then(() => self.skipWaiting())
+  );
+});
+
+self.addEventListener('isntall' , e => {
+console.log('Service Worker: Installed');
+});
+// Divisão de Codigos";
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
