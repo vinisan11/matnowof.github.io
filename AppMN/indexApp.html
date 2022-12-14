@@ -1103,25 +1103,7 @@ img.hover-shadow {
         else
             document.getElementById(el).style.display = 'none';
     }  </script>
-	
-<script>	
-	var input = document.getElementById('formula');
-	input.addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-        document.getElementById('execCopy').click('copy');
-      }
-    });
-</script>
-
-  <script type="text/javascript">
-document.getElementById('execCopy').addEventListener('click', execCopy);
-function execCopy() {
-  document.getElementById("formula").select();
-  document.execCommand("copy");
-} 
-    </script>	
-	
+		
 
 <script type="text/javascript">
 	
