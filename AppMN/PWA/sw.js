@@ -44,7 +44,7 @@ e.waitUntil(
    .then(cache => {
 	  console.log('Service Worker: Cacging Files');
       cache.addAll(cacheAssets);
-      });
+      })
       .then(() => self.skipWaiting())
   );
 });
