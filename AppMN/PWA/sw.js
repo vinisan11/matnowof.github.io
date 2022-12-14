@@ -1,8 +1,6 @@
 
 // This is the "Offline page" service worker
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
-
 const cacheName = 'sw-page';
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
@@ -55,23 +53,3 @@ self.addEventListener('isntall' , e => {
 console.log('Service Worker: Installed');
 });
 // Divisão de Codigos";
-
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
-    self.skipWaiting();
-  }
-});
-
-self.addEventListener('install', async (event) => {
-  event.waitUntil(
-    caches.open(CACHE)
-      .then(cache => (cache.addAll(resourcesToPrecache)))
-  );
-});
-
-self.addEventListener('fetch', (event) => {
-  event.respondWith (
-    caches.match(event.request)  
-       .then(cacheResponse =>(cacheResponse || fetch(event.request)))
-   );
-});
