@@ -1,6 +1,8 @@
 
 // This is the "Offline page" service worker
 
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+
 const cacheName = 'sw-page';
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
@@ -44,12 +46,29 @@ e.waitUntil(
    .then(cache => {
 	  console.log('Service Worker: Cacging Files');
       cache.addAll(cacheAssets);
-      })
+      });
       .then(() => self.skipWaiting())
   );
 });
 
 self.addEventListener('isntall' , e => {
 console.log('Service Worker: Installed');
+e.waitUntil(
+  caches.keys().then(cacheNames => {
+   return Promise.all(
+    cacheNames.map(cache => {
+	 if (cache !== cacheName) {
+	  console.log('Service Worker: Clearing Old Cache');
+	  return cache.delete(cache);
+	 }
+    })
+   );
+  }) 
+ );
+});
+
+self.addEventListener('fetch', e => {
+	console.log('Service Worker: Fetching');
+	e.respondWith(fetch(e.request).catch(()=> caches.match(e.request)));
 });
 // Divisão de Codigos";
